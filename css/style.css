@@ -117,8 +117,15 @@ img {
 
 .logo__nombre {
   font-weight: 400;
-  color: #fcf4f4;
+  color: #080808;
 }
+
+.logo__nombreFinal {
+  font-weight: 400;
+  color: #f9f5f5;
+}
+
+
 .logo__bold {
   font-weight: 700;
 }
