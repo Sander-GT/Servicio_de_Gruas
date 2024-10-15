@@ -76,11 +76,21 @@ img {
     background-repeat: no-repeat;
     background-position: center center;
 }
+
 .header__texto {
-   text-align: center;
-   color: var(--blanco);
-   margin-top: 5rem;
+  text-align: center;
+  color: #000000;
+  margin-top: 5rem;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.6); /* Fondo semitransparente */
+  backdrop-filter: blur(10px); /* Difumina el fondo detrás del texto */
+  border-radius: 1rem; /* Esquinas redondeadas para un mejor estilo */
 }
+
+
+
+
+
 @media (min-width: 768px) {
     .header__texto {
         margin-top: 15rem;
@@ -97,12 +107,23 @@ img {
         align-items: center;
     }
 }
+
+
 .logo {
-    color: var(--blanco);
-    
+  color: #fcf4f4;
+  padding: 0.5rem 1rem; /* Espacio dentro del fondo difuminado */
+  background: rgba(255, 255, 255, 0.2); /* Fondo semitransparente */
+  backdrop-filter: blur(10px); /* Efecto de desenfoque */
+  border-radius: 0.5rem; /* Bordes redondeados */
+  display: inline-block; /* Asegura que el elemento tome solo el ancho necesario */
+  margin: 0.5rem; /* Pequeño margen alrededor del logo */
 }
+
+
+
 .logo__nombre {
     font-weight: 400;
+    color: #fcf4f4;
 }
 .logo__bold {
     font-weight: 700;
@@ -315,7 +336,7 @@ img {
 /* From Uiverse.io by kennyotsu */ 
 .card {
     /* color used to softly clip top and bottom of the .words container */
-    --bg-color: #212121;
+    --bg-color: #41cc5f;
 
     background-color: var(--bg-color);
     padding: 1rem 2rem;
@@ -357,8 +378,8 @@ img {
     display: block;
     height: 100%;
     padding-left: 6px;
-    color: #956afa;
-    animation: spin_4991 4s infinite;
+    color: #f6f4fa;
+    animation: spin_4991 6s infinite;
   }
   
   @keyframes spin_4991 {
@@ -403,3 +424,69 @@ img {
     }
   }
   
+
+
+/* Sección de Por Qué Elegirnos */
+.elegirnos-section {
+  background-color: #2f2f2f; /* Fondo oscuro */
+  padding: 3rem 0;
+}
+
+.elegirnos-section .titulo-seccion {
+  color: #fff;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.elegirnos-section .titulo-seccion::after {
+  content: "";
+  width: 50px;
+  height: 3px;
+  background-color: #00ff00; /* Línea decorativa */
+  display: block;
+  margin: 0.5rem auto;
+}
+
+/* Contenedor de tarjetas en una fila */
+.elegirnos-section .tarjetas-container {
+  display: flex;
+  justify-content: center; /* Centra las tarjetas */
+  gap: 10rem; /* Espacio entre tarjetas (reduce a 0.5rem) */
+  flex-wrap: nowrap; /* Fuerza que las tarjetas permanezcan en una fila */
+}
+
+/* Estilo de las tarjetas */
+.elegirnos-section .tarjeta {
+  background-color: #3b3b3b; /* Fondo de las tarjetas */
+  padding: 2rem;
+  border-radius: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #fff;
+  text-align: center;
+  width: 100%; /* Las tarjetas ocuparán el mismo ancho */
+  max-width: 300px; /* Limita el ancho máximo de las tarjetas */
+}
+
+.elegirnos-section .tarjeta:hover {
+  transform: translateY(-10px); /* Efecto al levantar la tarjeta */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Sombra */
+}
+
+.elegirnos-section .icono-caracteristica {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #00ff00; /* Color de los íconos */
+}
+
+.elegirnos-section .tarjeta h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.elegirnos-section .tarjeta p {
+  color: #bfbfbf;
+  font-size: 1rem;
+}
