@@ -1,1 +1,15 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/1a6a9eb8-fd50-440e-b687-9d242ad216db/deploy-status)](https://app.netlify.com/sites/leafy-flan-07b7f5/deploys)
+Servicio de Grúas
+
+Descripción del Proyecto
+
+Este proyecto es una aplicación web diseñada para facilitar el acceso a servicios de grúas de emergencia. Su objetivo principal es ofrecer a los usuarios una solución rápida y eficiente para solicitar asistencia en situaciones de emergencia, como accidentes de tráfico o vehículos averiados.
+
+Características
+
+-Interfaz Intuitiva: Una plataforma fácil de usar que permite a los usuarios solicitar servicios de grúas con pocos clics.
+
+-Geolocalización: Identificación de la ubicación del usuario para enviar la grúa más cercana.
+
+-Información en Tiempo Real: Actualizaciones sobre la llegada del servicio de grúa y el estado de la solicitud.
+
+-Sistema de Contacto: Opción para comunicarse directamente con el operador de la grúa para cualquier consulta adicional.
