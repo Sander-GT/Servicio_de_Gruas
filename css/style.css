@@ -133,7 +133,7 @@ img {
   backdrop-filter: blur(10px); /* Efecto de desenfoque */
   border-radius: 1.5rem; /* Bordes redondeados */
   display: block; /* Cambiar a block para que tome todo el ancho disponible */
-  max-width: 50px; /* Aumentar el tamaño total (250px + 20px = 450px) */
+  max-width: 250px; /* Aumentar el tamaño total (250px + 20px = 450px) */
   margin: 0cm auto 0; /* Centra horizontalmente y baja la imagen 1 cm */
 }
 
