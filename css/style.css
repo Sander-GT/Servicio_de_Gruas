@@ -30,6 +30,9 @@ body {
   margin: 0 auto;
 }
 
+
+
+
 a {
   text-decoration: none;
 }
@@ -105,15 +108,32 @@ img {
   }
 }
 
+
+
+
+
 .logo {
   color: #fcf4f4;
-  padding: 0.5rem 1rem; /* Espacio dentro del fondo difuminado */
+  padding: 0.2rem 1rem; /* Espacio dentro del fondo difuminado */
   background: rgba(255, 255, 255, 0.2); /* Fondo semitransparente */
   backdrop-filter: blur(10px); /* Efecto de desenfoque */
-  border-radius: 0.5rem; /* Bordes redondeados */
-  display: inline-block; /* Asegura que el elemento tome solo el ancho necesario */
-  margin: 0.5rem; /* Pequeño margen alrededor del logo */
+  border-radius: 1.5rem; /* Bordes redondeados */
+  display: block; /* Cambiar a block para que tome todo el ancho disponible */
+  max-width: 450px; /* Aumentar el tamaño total (250px + 20px = 450px) */
+  margin: 0cm auto 0; /* Centra horizontalmente y baja la imagen 1 cm */
 }
+
+.logo-footer{
+  color: #fcf4f4;
+  padding: 0.2rem 1rem; /* Espacio dentro del fondo difuminado */
+  background: rgba(255, 255, 255, 0.2); /* Fondo semitransparente */
+  backdrop-filter: blur(10px); /* Efecto de desenfoque */
+  border-radius: 1.5rem; /* Bordes redondeados */
+  display: block; /* Cambiar a block para que tome todo el ancho disponible */
+  max-width: 250px; /* Aumentar el tamaño total (250px + 20px = 450px) */
+  margin: 0cm auto 0; /* Centra horizontalmente y baja la imagen 1 cm */
+}
+
 
 .logo__nombre {
   font-weight: 400;
@@ -229,6 +249,9 @@ img {
   transition-duration: 0.3s;
 }
 
+
+
+
 .Btn-wsp:hover {
   width: 150px;
   border-radius: 40px;
@@ -251,58 +274,87 @@ img {
   transform: translate(2px, 2px);
 }
 
-/* From Uiverse.io by vinodjangid07 */ 
+
+
+
+/* Botón de Instagram adaptado con su diseño original */
 .Btn-insta {
-  border: none;
-  border-radius: 50%;
-  width: 45px;
-  height: 45px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  transition-duration: .4s;
+  justify-content: flex-start;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
   cursor: pointer;
   position: relative;
+  overflow: hidden;
+  transition-duration: .3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
   background: #f09433;
   background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
   background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
   background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
-  overflow: hidden;
 }
 
-.svgIcon {
+/* ícono */
+.sign-insta {
+  width: 100%;
   transition-duration: .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.svgIcon path {
+.sign-insta svg {
+  width: 30px;
+}
+
+.sign-insta svg path {
   fill: white;
 }
 
-.text {
+/* texto */
+.text-insta {
   position: absolute;
-  color: rgb(255, 255, 255);
-  width: 120px;
+  right: 0%;
+  width: 0%;
+  opacity: 0;
+  color: white;
+  font-size: 1.2em;
   font-weight: 600;
-  opacity: 0;
-  transition-duration: .4s;
-}
-
-.Btn-insta:hover {
-  width: 110px;
-  transition-duration: .4s;
-  border-radius: 30px;
-}
-
-.Btn-insta:hover .text {
-  opacity: 1;
-  transition-duration: .4s;
-}
-
-.Btn-insta:hover .svgIcon {
-  opacity: 0;
   transition-duration: .3s;
 }
+
+/* hover efecto en el ancho del botón */
+.Btn-insta:hover {
+  width: 150px;
+  border-radius: 40px;
+  transition-duration: .3s;
+}
+
+/* hover en ícono y texto */
+.Btn-insta:hover .sign-insta {
+  width: 30%;
+  transition-duration: .3s;
+  padding-left: 10px;
+}
+
+.Btn-insta:hover .text-insta {
+  opacity: 1;
+  width: 70%;
+  transition-duration: .3s;
+  padding-right: 10px;
+}
+
+/* efecto de clic */
+.Btn-insta:active {
+  transform: translate(2px ,2px);
+}
+
+
+
+
 
 .footer {
   background-color: var(--negro);
@@ -315,6 +367,89 @@ img {
   text-align: center; /* Alinear el texto a la derecha */
   padding: 10px 20px; /* Espaciado lateral, opcional */
 }
+
+
+
+
+
+/* From Uiverse.io by Yaya12085 */ 
+.Btn-face {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition-duration: .3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+  background-color: #0163E0;
+}
+
+/* plus sign */
+.sign-face {
+  width: 100%;
+  transition-duration: .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign-face svg {
+  width: 30px;
+}
+
+.sign-face svg path {
+  fill: white;
+}
+/* text */
+.text-face {
+  position: absolute;
+  right: 0%;
+  width: 0%;
+  opacity: 0;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 600;
+  transition-duration: .3s;
+}
+/* hover effect on button width */
+.Btn-face:hover {
+  width: 150px;
+  border-radius: 40px;
+  transition-duration: .3s;
+}
+
+.Btn-face:hover .sign {
+  width: 30%;
+  transition-duration: .3s;
+  padding-left: 10px;
+}
+/* hover effect button's text */
+.Btn-face:hover .text {
+  opacity: 1;
+  width: 70%;
+  transition-duration: .3s;
+  padding-right: 10px;
+}
+/* button click effect*/
+.Btn-face:active {
+  transform: translate(2px ,2px);
+}
+
+
+
+
+.siguenos {
+  color: white;
+}
+
+
+
+
 
 /* Sección de Por Qué Elegirnos */
 .elegirnos-section {
@@ -584,15 +719,6 @@ img {
 
 
 
-
-
-/* Likes*/ 
-#heart {
-  display: none;
-}
-
-
-
 /* Inside */
 .sidebar {
   display: flex; /* Utiliza flexbox */
@@ -610,214 +736,6 @@ img {
       margin-bottom: 2cm; /* Margen inferior para pantallas pequeñas */
   }
 }
-
-
-
-
-/* multi redes */ 
-.content {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  gap: 15px;
-  width: 300px;
-  height: 100px;
-  position: relative;
-  overflow: hidden;
-  border-radius: 14px;
-}
-.content::before {
-  content: "";
-  position: absolute;
-  left: 0%;
-  top: 50%;
-  transform: translateY(-50%);
-  bottom: 0;
-  width: 40px;
-  height: 96px;
-  background-image: linear-gradient(90deg, #0000001c, transparent);
-  z-index: 2;
-  border-radius: 10px 0 0 10px;
-}
-.content::after {
-  content: "";
-  position: absolute;
-  right: 0%;
-  top: 50%;
-  transform: translateY(-50%);
-  bottom: 0;
-  width: 40px;
-  height: 96px;
-  background-image: linear-gradient(-90deg, #0000001c, transparent);
-  z-index: 9;
-  border-radius: 0 10px 10px 0;
-}
-.basic-marquee {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  width: 100%;
-}
-.basic-marquee .button {
-  transition: all 0.3s ease;
-}
-.basic-marquee .button:hover {
-  transform: scale(1.1);
-  cursor: pointer;
-}
-.basic-marquee-1 {
-  animation: marquee 15s linear infinite;
-}
-.basic-marquee-2 {
-  animation: marquee 21s linear infinite;
-}
-.benefits {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 15px;
-  min-width: 900px;
-  height: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  position: absolute;
-  inset: 0;
-}
-@keyframes marquee {
-  0% {
-    transform: translateX(-10%);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-.basic-marquee svg {
-  width: 40px;
-}
-.basic-marquee button {
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.cls-1 {
-  fill: #1ab7ea;
-}
-
-.cls-1,
-.cls-2 {
-  fill-rule: evenodd;
-}
-
-.cls-2 {
-  fill: #fff;
-}
-
-.cls-3 {
-  fill: #ee8208;
-  fill-rule: evenodd;
-}
-
-.cls-4 {
-  fill: #fff;
-}
-
-.cls-5,
-.cls-6 {
-  fill-rule: evenodd;
-}
-
-.cls-5 {
-  fill: #48dd55;
-}
-
-.cls-6 {
-  fill: #fff;
-}
-
-.cls-7 {
-  fill: #0a66c2;
-}
-
-.cls-7,
-.cls-8 {
-  fill-rule: evenodd;
-}
-
-.cls-8 {
-  fill: #fff;
-}
-
-.cls-9 {
-  fill: #10b7f4;
-}
-
-.cls-9,
-.cls-10 {
-  fill-rule: evenodd;
-}
-
-.cls-10 {
-  fill: #fff;
-}
-
-.cls-11 {
-  fill: #1da1f2;
-}
-
-.cls-11,
-.cls-12 {
-  fill-rule: evenodd;
-}
-
-.cls-12 {
-  fill: #fff;
-}
-
-.cls-13 {
-  fill: #ea4c89;
-}
-
-.cls-13,
-.cls-14 {
-  fill-rule: evenodd;
-}
-
-.cls-14 {
-  fill: #fff;
-}
-
-.cls-15 {
-  fill: #1769ff;
-}
-
-.cls-15,
-.cls-16 {
-  fill-rule: evenodd;
-}
-
-.cls-16 {
-  fill: #fff;
-}
-
-.cls-17 {
-  fill: #f26522;
-}
-
-.cls-17,
-.cls-18 {
-  fill-rule: evenodd;
-}
-
-.cls-18 {
-  fill: #fff;
-}
-
 
 
 
