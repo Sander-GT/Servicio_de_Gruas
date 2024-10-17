@@ -742,4 +742,26 @@ img {
 
 
 
+/* Clase para redimensionar la imagen */
+.small-img {
+  max-width: 70%;  /* Cambia el tamaño según lo necesites, ej. 80%, 50% */
+  height: auto;    /* Mantiene la proporción de la imagen */
+  display: block;
+  margin: 0 auto;  /* Centra la imagen horizontalmente */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .small-img {
+      max-width: 90%;  /* Ajusta el tamaño en pantallas más pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  .small-img {
+      max-width: 100%;  /* Ajuste máximo para pantallas pequeñas */
+  }
+}
+
+
 
