@@ -742,7 +742,10 @@ img {
 
 
 
-/* Clase para redimensionar la imagen */
+
+
+
+/* Clase para redimensionar la imagen  QR*/
 .small-img {
   max-width: 70%;  /* Cambia el tamaño según lo necesites, ej. 80%, 50% */
   height: auto;    /* Mantiene la proporción de la imagen */
@@ -762,6 +765,35 @@ img {
       max-width: 100%;  /* Ajuste máximo para pantallas pequeñas */
   }
 }
+
+
+
+
+
+
+
+
+/* formas de pago */
+
+.payment-methods {
+  list-style: none;
+  padding-left: 0;
+}
+
+
+
+.icono-pago {
+  width: 1.2em; /* Ajusta el tamaño de los iconos al tamaño del texto */
+  height: 1.2em;
+  margin-right: 8px;
+}
+
+.no-margin {
+  margin-bottom: 15px;
+}
+
+
+
 
 
 
