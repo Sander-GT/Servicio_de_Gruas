@@ -7,21 +7,31 @@
   --blanco: #ffffff;
   --negro: #000000;
 }
+
 html {
   box-sizing: border-box;
-  font-size: 62.5%; /* 1 rem = 10px */    
+  font-size: 62.5%;
+  /* 1 rem = 10px */
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
+
 body {
   font-family: var(--fuenteParrafos);
   font-size: 1.6rem;
   line-height: 2;
-  background-image: url(../img/Fondo.jpg); /* Agregar la imagen de fondo */
-  background-size: cover; /* Asegura que la imagen cubra todo el fondo */
-  background-repeat: no-repeat; /* Evita que la imagen se repita */
-  background-position: center center; /* Centra la imagen en el fondo */
+  background-image: url(../img/Fondo.jpg);
+  /* Agregar la imagen de fondo */
+  background-size: cover;
+  /* Asegura que la imagen cubra todo el fondo */
+  background-repeat: no-repeat;
+  /* Evita que la imagen se repita */
+  background-position: center center;
+  /* Centra la imagen en el fondo */
 }
 
 /** Globales **/
@@ -36,22 +46,31 @@ body {
 a {
   text-decoration: none;
 }
-h1, h2, h3, h4 {
+
+h1,
+h2,
+h3,
+h4 {
   font-family: var(--fuenteHeading);
   line-height: 1.2;
 }
+
 h1 {
   font-size: 4.8rem;
 }
+
 h2 {
   font-size: 4rem;
 }
+
 h3 {
   font-size: 3.2rem;
 }
+
 h4 {
   font-size: 2.8rem;
 }
+
 img {
   max-width: 100%;
 }
@@ -60,9 +79,11 @@ img {
 .no-margin {
   margin: 0;
 }
+
 .no-padding {
   padding: 0;
 }
+
 .centrar-texto {
   text-align: center;
 }
@@ -71,9 +92,11 @@ img {
 .webp .header {
   background-image: url(../img/Grua2.jpg);
 }
+
 .no-webp .header {
   background-image: url(../img/Grua2.jpg);
 }
+
 .header {
   height: 60rem;
   background-size: cover;
@@ -86,25 +109,29 @@ img {
   color: #000000;
   margin-top: 5rem;
   padding: 2rem;
-  background: rgba(255, 255, 255, 0.6); /* Fondo semitransparente */
-  backdrop-filter: blur(10px); /* Difumina el fondo detrás del texto */
-  border-radius: 1rem; /* Esquinas redondeadas para un mejor estilo */
+  background: rgba(255, 255, 255, 0.6);
+  /* Fondo semitransparente */
+  backdrop-filter: blur(10px);
+  /* Difumina el fondo detrás del texto */
+  border-radius: 1rem;
+  /* Esquinas redondeadas para un mejor estilo */
 }
 
 @media (min-width: 768px) {
   .header__texto {
-      margin-top: 15rem;
+    margin-top: 15rem;
   }
 }
+
 .barra {
   padding-top: 4rem;
 }
 
 @media (min-width: 768px) {
   .barra {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -114,27 +141,43 @@ img {
 
 .logo {
   color: #fcf4f4;
-  padding: 0.2rem 1rem; /* Espacio dentro del fondo difuminado */
-  background: rgba(255, 255, 255, 0.2); /* Fondo semitransparente */
-  backdrop-filter: blur(10px); /* Efecto de desenfoque */
-  border-radius: 1.5rem; /* Bordes redondeados */
-  display: block; /* Cambiar a block para que tome todo el ancho disponible */
-  width: 90%; /* Ancho del 90% del contenedor padre */
-  max-width: 450px; /* Ancho máximo */
-  margin: 1cm auto 0; /* Centra horizontalmente y añade margen superior */
-  box-sizing: border-box; /* Incluye padding y border en el ancho total */
+  padding: 0.2rem 1rem;
+  /* Espacio dentro del fondo difuminado */
+  background: rgba(255, 255, 255, 0.2);
+  /* Fondo semitransparente */
+  backdrop-filter: blur(10px);
+  /* Efecto de desenfoque */
+  border-radius: 1.5rem;
+  /* Bordes redondeados */
+  display: block;
+  /* Cambiar a block para que tome todo el ancho disponible */
+  width: 90%;
+  /* Ancho del 90% del contenedor padre */
+  max-width: 450px;
+  /* Ancho máximo */
+  margin: 1cm auto 0;
+  /* Centra horizontalmente y añade margen superior */
+  box-sizing: border-box;
+  /* Incluye padding y border en el ancho total */
 }
 
 
-.logo-footer{
+.logo-footer {
   color: #fcf4f4;
-  padding: 0.2rem 1rem; /* Espacio dentro del fondo difuminado */
-  background: rgba(255, 255, 255, 0.2); /* Fondo semitransparente */
-  backdrop-filter: blur(10px); /* Efecto de desenfoque */
-  border-radius: 1.5rem; /* Bordes redondeados */
-  display: block; /* Cambiar a block para que tome todo el ancho disponible */
-  max-width: 250px; /* Aumentar el tamaño total (250px + 20px = 450px) */
-  margin: 0cm auto 0; /* Centra horizontalmente y baja la imagen 1 cm */
+  padding: 0.2rem 1rem;
+  /* Espacio dentro del fondo difuminado */
+  background: rgba(255, 255, 255, 0.2);
+  /* Fondo semitransparente */
+  backdrop-filter: blur(10px);
+  /* Efecto de desenfoque */
+  border-radius: 1.5rem;
+  /* Bordes redondeados */
+  display: block;
+  /* Cambiar a block para que tome todo el ancho disponible */
+  max-width: 250px;
+  /* Aumentar el tamaño total (250px + 20px = 450px) */
+  margin: 0cm auto 0;
+  /* Centra horizontalmente y baja la imagen 1 cm */
 }
 
 
@@ -152,12 +195,14 @@ img {
 .logo__bold {
   font-weight: 700;
 }
+
 @media (min-width: 768px) {
   .navegacion {
-      display: flex;
-      gap: 2rem;
+    display: flex;
+    gap: 2rem;
   }
 }
+
 .navegacion__enlace {
   display: block;
   text-align: center;
@@ -167,9 +212,9 @@ img {
 
 @media (min-width: 768px) {
   .contenido-principal {
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-      column-gap: 4rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 4rem;
   }
 }
 
@@ -177,10 +222,12 @@ img {
   border-bottom: 1px solid var(--gris);
   margin-bottom: 2rem;
 }
+
 .entrada:last-of-type {
   border: none;
   margin-bottom: 0;
 }
+
 .boton {
   display: block;
   font-family: var(--fuenteHeading);
@@ -196,20 +243,23 @@ img {
 
 @media (min-width: 768px) {
   .boton {
-      display: inline-block;
+    display: inline-block;
   }
 }
+
 .boton:hover {
   cursor: pointer;
 }
+
 .boton--primario {
   background-color: var(--negro);
 }
+
 .boton--secundario {
   background-color: var(--primario);
 }
 
-/* From Uiverse.io by Gaurang7717 */ 
+/* From Uiverse.io by Gaurang7717 */
 .Btn-wsp {
   display: flex;
   align-items: center;
@@ -241,6 +291,7 @@ img {
 .sign svg path {
   fill: white;
 }
+
 .text {
   position: absolute;
   right: 0%;
@@ -273,6 +324,7 @@ img {
   transition-duration: 0.3s;
   padding-right: 10px;
 }
+
 .Btn-wsp:active {
   transform: translate(2px, 2px);
 }
@@ -296,8 +348,8 @@ img {
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
   background: #f09433;
   background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
-  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
 }
 
 /* ícono */
@@ -352,7 +404,7 @@ img {
 
 /* efecto de clic */
 .Btn-insta:active {
-  transform: translate(2px ,2px);
+  transform: translate(2px, 2px);
 }
 
 
@@ -366,16 +418,19 @@ img {
 }
 
 .footer-right {
-  color: rgba(199, 194, 194, 0.595); /* Color del texto */
-  text-align: center; /* Alinear el texto a la derecha */
-  padding: 10px 20px; /* Espaciado lateral, opcional */
+  color: rgba(199, 194, 194, 0.595);
+  /* Color del texto */
+  text-align: center;
+  /* Alinear el texto a la derecha */
+  padding: 10px 20px;
+  /* Espaciado lateral, opcional */
 }
 
 
 
 
 
-/* From Uiverse.io by Yaya12085 */ 
+/* From Uiverse.io by Yaya12085 */
 .Btn-face {
   display: flex;
   align-items: center;
@@ -408,6 +463,7 @@ img {
 .sign-face svg path {
   fill: white;
 }
+
 /* text */
 .text-face {
   position: absolute;
@@ -419,6 +475,7 @@ img {
   font-weight: 600;
   transition-duration: .3s;
 }
+
 /* hover effect on button width */
 .Btn-face:hover {
   width: 150px;
@@ -431,6 +488,7 @@ img {
   transition-duration: .3s;
   padding-left: 10px;
 }
+
 /* hover effect button's text */
 .Btn-face:hover .text {
   opacity: 1;
@@ -438,9 +496,10 @@ img {
   transition-duration: .3s;
   padding-right: 10px;
 }
+
 /* button click effect*/
 .Btn-face:active {
-  transform: translate(2px ,2px);
+  transform: translate(2px, 2px);
 }
 
 
@@ -456,7 +515,8 @@ img {
 
 /* Sección de Por Qué Elegirnos */
 .elegirnos-section {
-  background-color: #2f2f2f; /* Fondo oscuro */
+  background-color: #2f2f2f;
+  /* Fondo oscuro */
   padding: 3rem 0;
 }
 
@@ -470,43 +530,60 @@ img {
 .tarjetas-container {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap; /* Permite que las tarjetas se ajusten en filas */
-  gap: 2rem; /* Espacio entre las tarjetas */
+  flex-wrap: wrap;
+  /* Permite que las tarjetas se ajusten en filas */
+  gap: 2rem;
+  /* Espacio entre las tarjetas */
 }
 
 .tarjeta {
-  background-color: var(--blanco); /* Color de fondo de las tarjetas */
-  border-radius: 1rem; /* Bordes redondeados */
+  background-color: var(--blanco);
+  /* Color de fondo de las tarjetas */
+  border-radius: 1rem;
+  /* Bordes redondeados */
   padding: 2rem;
-  width: 300px; /* Ancho fijo para las tarjetas */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
-  text-align: center; /* Centra el texto dentro de las tarjetas */
-  transition: transform 0.3s; /* Transición suave para el efecto hover */
+  width: 300px;
+  /* Ancho fijo para las tarjetas */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* Sombra suave */
+  text-align: center;
+  /* Centra el texto dentro de las tarjetas */
+  transition: transform 0.3s;
+  /* Transición suave para el efecto hover */
 }
 
 .tarjeta:hover {
-  transform: translateY(-5px); /* Efecto de elevación al pasar el mouse */
+  transform: translateY(-5px);
+  /* Efecto de elevación al pasar el mouse */
 }
 
 .icono-caracteristica {
-  font-size: 3rem; /* Tamaño del icono */
-  margin-bottom: 1rem; /* Espacio debajo del icono */
-  color: var(--primario); /* Color del icono */
+  font-size: 3rem;
+  /* Tamaño del icono */
+  margin-bottom: 1rem;
+  /* Espacio debajo del icono */
+  color: var(--primario);
+  /* Color del icono */
 }
 
 .tarjeta h4 {
-  font-size: 2rem; /* Tamaño del título dentro de la tarjeta */
-  margin-bottom: 0.5rem; /* Espacio debajo del título */
-  color: var(--negro); /* Color del título */
+  font-size: 2rem;
+  /* Tamaño del título dentro de la tarjeta */
+  margin-bottom: 0.5rem;
+  /* Espacio debajo del título */
+  color: var(--negro);
+  /* Color del título */
 }
 
 .tarjeta p {
-  font-size: 1.6rem; /* Tamaño del texto descriptivo */
-  color: #555; /* Color del texto descriptivo */
+  font-size: 1.6rem;
+  /* Tamaño del texto descriptivo */
+  color: #555;
+  /* Color del texto descriptivo */
 }
 
 
-/* From Uiverse.io by svqantonio */ 
+/* From Uiverse.io by svqantonio */
 .main {
   display: flex;
   flex-direction: column;
@@ -634,7 +711,7 @@ img {
 }
 
 
-/* From Uiverse.io by SouravBandyopadhyay */ 
+/* From Uiverse.io by SouravBandyopadhyay */
 .card-title {
   color: #262626;
   font-size: 1.5em;
@@ -724,45 +801,57 @@ img {
 
 /* Inside */
 .sidebar {
-  display: flex; /* Utiliza flexbox */
-  flex-direction: column; /* Alinea los elementos en columna */
-  align-items: center; /* Centra los elementos horizontalmente */
-  justify-content: flex-start; /* Alinea los elementos al inicio */
-  width: 90%; /* Ajusta el ancho de la sidebar */
-  max-width: 400px; /* Ancho máximo */
-  margin-top: 2.8cm; /* Desplaza la sidebar 2.8 centímetros hacia abajo */
+  display: flex;
+  /* Utiliza flexbox */
+  flex-direction: column;
+  /* Alinea los elementos en columna */
+  align-items: center;
+  /* Centra los elementos horizontalmente */
+  justify-content: flex-start;
+  /* Alinea los elementos al inicio */
+  width: 90%;
+  /* Ajusta el ancho de la sidebar */
+  max-width: 400px;
+  /* Ancho máximo */
+  margin-top: 2.8cm;
+  /* Desplaza la sidebar 2.8 centímetros hacia abajo */
 }
 
 /* Estilos específicos para pantallas pequeñas */
-@media (max-width: 600px) { /* Cambia 600px según sea necesario */
+@media (max-width: 600px) {
+
+  /* Cambia 600px según sea necesario */
   .sidebar {
-      margin-bottom: 2cm; /* Margen inferior para pantallas pequeñas */
+    margin-bottom: 2cm;
+    /* Margen inferior para pantallas pequeñas */
   }
 }
-
-
-
 
 
 
 /* Clase para redimensionar la imagen  QR*/
 .small-img {
-  max-width: 70%;  /* Cambia el tamaño según lo necesites, ej. 80%, 50% */
-  height: auto;    /* Mantiene la proporción de la imagen */
+  max-width: 70%;
+  /* Cambia el tamaño según lo necesites, ej. 80%, 50% */
+  height: auto;
+  /* Mantiene la proporción de la imagen */
   display: block;
-  margin: 0 auto;  /* Centra la imagen horizontalmente */
+  margin: 0 auto;
+  /* Centra la imagen horizontalmente */
 }
 
 /* Estilos responsivos */
 @media (max-width: 768px) {
   .small-img {
-      max-width: 90%;  /* Ajusta el tamaño en pantallas más pequeñas */
+    max-width: 90%;
+    /* Ajusta el tamaño en pantallas más pequeñas */
   }
 }
 
 @media (max-width: 480px) {
   .small-img {
-      max-width: 100%;  /* Ajuste máximo para pantallas pequeñas */
+    max-width: 100%;
+    /* Ajuste máximo para pantallas pequeñas */
   }
 }
 
@@ -783,7 +872,8 @@ img {
 
 
 .icono-pago {
-  width: 1.2em; /* Ajusta el tamaño de los iconos al tamaño del texto */
+  width: 1.2em;
+  /* Ajusta el tamaño de los iconos al tamaño del texto */
   height: 1.2em;
   margin-right: 8px;
 }
@@ -791,9 +881,3 @@ img {
 .no-margin {
   margin-bottom: 15px;
 }
-
-
-
-
-
-
